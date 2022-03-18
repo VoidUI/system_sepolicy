@@ -710,6 +710,8 @@ set_prop(system_server, device_config_window_manager_native_boot_prop)
 set_prop(system_server, device_config_configuration_prop)
 set_prop(system_server, device_config_connectivity_prop)
 
+# Smart IDLE Maint
+set_prop(system_server, smart_idle_maint_enabled_prop)
 
 # Allow query ART device config properties
 get_prop(system_server, device_config_runtime_native_boot_prop)
