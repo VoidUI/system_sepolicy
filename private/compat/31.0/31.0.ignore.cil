@@ -7,4 +7,5 @@
   ( new_objects
     hypervisor_prop
     smart_idle_maint_enabled_prop
+    sysfs_lru_gen_enabled
   ))
