@@ -80,6 +80,9 @@ allow init ota_metadata_file:dir lock;
 # /dev/block.
 allow init vd_device:blk_file relabelto;
 
+# Adapt init permissions for current environment
+allow init property_type:file { append create getattr map open read relabelto rename setattr unlink write };
+
 # Only init is allowed to set the sysprop indicating whether perf_event_open()
 # SELinux hooks were detected.
 set_prop(init, init_perf_lsm_hooks_prop)
